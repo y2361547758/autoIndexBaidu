@@ -1,4 +1,5 @@
 # Apache AutoIndex - BaiduYun theme
+[Live View](http://jp.rika.ren/apk/)
 
 ## Usage
 Just clone this repo on your file root (index dir)
