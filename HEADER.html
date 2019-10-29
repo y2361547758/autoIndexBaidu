@@ -1,0 +1,148 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="referrer" content="never">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #F7F7F7;
+      color: #333;
+      margin-bottom: 4em;
+    }
+    table {
+      width: 100%;
+      border-spacing: 0;
+      font-size: 0;
+      background-color: #F7F7F7;
+    }
+    a {
+      color: #333;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    a:hover { color: dodgerblue; }
+    tr:first-child {
+      background: linear-gradient(to bottom,#f4f4f4 0,#eee 100%);
+      box-shadow: 0 1px 1px 0 #DFDFDF;
+      line-height: 4em;
+    }
+    th { border-right: 1px solid #ddd; }
+    th:hover { background: #FFF7; }
+    tr:first-child > th, tr > td:last-child { text-align: center; }
+    tr:first-child > th:first-child:after { content: 'Sort:'; }
+    tr:first-child > th:nth-child(2) { text-align: left; }
+    tr:first-child > th:nth-child(3), tr > th:nth-child(4) { text-align: right; }
+    tr:nth-child(2), tr:last-child { display: none; }
+    tr {
+      color: #aaa;
+      font-size: small;
+    }
+    tr:hover { background-color: #FFF; }
+    tr > td:first-child { width: 1px; }
+    td:nth-child(2) { font-size: medium; }
+    td {
+      border-bottom: solid 1px #DFDFDF;
+      border-top: solid 1px #FFF;
+    }
+    tr:nth-child(3) > td { border-top: none; }
+    tr:nth-child(3) > td:nth-child(2)>a { font-size: 0; }
+    tr:nth-child(3) > td:nth-child(2)>a:after {
+      content: '../';
+      font-size: 16px;
+      color: #333;
+    }
+    img {
+      width: 36px;
+      max-height: 36px;
+      margin: 0.5em;
+    }
+    header {
+      position: absolute;
+      right: 0;
+    }
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 2.5em;
+      vertical-align: top;
+      padding: 0;
+    }
+    button:after {
+      content: '#';
+      display: block;
+      width: .5em;
+      word-break: break-all;
+      line-height: 8px;
+      color: #777;
+      margin-top: .5em;
+    }
+    button:focus {
+      outline: none;
+      padding: unset;
+    }
+    footer {
+      box-shadow: 0 0 1px 0 #ccc;
+      background-color: #EDEDED;
+      text-align: center;
+      line-height: 3em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <style id='b' type="disable">
+    tr:first-child {
+      display: block;
+      width: 100%;
+      height: 4em;
+      border: none;
+      margin-bottom: 2px;
+    }
+    tr:first-child > th {
+      display: inline;
+      margin-right: 1px;
+    }
+    tr:first-child > th:first-child { border: none; }
+    tr {
+      display: inline-block;
+      border: 2px dashed;
+      width: 20em;
+      height: 10em;
+      margin: 0 -2px -2px 0;
+    }
+    tr > td:first-child { width: unset; }
+    td {
+      display: block;
+      text-align: center;
+      border: none;
+    }
+    button:after {
+      content: '___';
+      margin-top: -.2em;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function get() {
+      var p = document.cookie.search(/v=(0|1)/);
+      if (p != -1 && document.cookie[p+2] == "1") return 1;
+      else return 0;
+    }
+    function display(p) {
+      document.getElementById('b').disabled = p;
+      document.getElementById('b').type = p ? 'disable' : '';
+    }
+    function toggle() {
+      var p = get() ? 0 : 1;
+      document.cookie = "v=" + p + "; expires=" + new Date(Date.now() + 30758400000).toUTCString()
+      display(p);
+    }
+    display(get());
+  </script>
+  <header>
+    <button title="Switch View" onclick="toggle()"></button>
+    <a href="/"><img src="/icons/popup_close.png"></a>
+  </header>

@@ -1,0 +1,32 @@
+IndexOptions FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=* SuppressHTMLPreamble HTMLTable IconsAreLinks VersionSort
+HeaderName HEADER.html
+ReadmeName README.html
+
+AddIconByEncoding (CMP,icons/zip.png) x-compress x-gzip x-bzip2
+
+AddIconByType (TXT,icons/text.png) text/*
+AddIconByType (IMG,icons/image.png) image/*
+AddIconByType (SND,icons/audio.png) audio/*
+AddIconByType (VID,icons/video.png) video/*
+
+AddIcon icons/exe.png .bin .exe
+AddIcon icons/zip.png .Z .z .tgz .tar .gz .zip
+AddIcon icons/ps.png .ps .ai .eps
+AddIcon icons/html.png .html .shtml .htm .pdf
+AddIcon icons/text.png .txt
+AddIcon icons/code.png .c .C .cc .CC .cpp .c++ .pl .py
+AddIcon icons/code.png .conf .sh .shar .csh .ksh .tcl
+AddIcon icons/android.png .apk .apkx
+AddIcon icons/pdf.png .pdf
+AddIcon icons/doc.png .doc .docx
+AddIcon icons/xls.png .xls .xlsx
+AddIcon icons/ppt.png .ppt .pptx
+
+AddIcon icons/folder.png ..
+# AddIcon icons/hand.right.gif README
+AddIcon icons/folder.png ^^DIRECTORY^^
+# AddIcon icons/blank.gif ^^BLANKICON^^
+
+DefaultIcon icons/cloud.png
+
+IndexIgnore .??* *~ *# HEADER* README* RCS CVS *,v *,t
