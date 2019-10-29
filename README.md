@@ -15,6 +15,12 @@ then all dirs under this folder would have
 
 > If you don't want any Cookies or JavaScript or neither of them, just delete the code in `HEADER.html`
 
+### To set Detailed view as defatule:
+Change `HEADER.html` [Line #131](HEADER.html#L131):
+```javascript
+if (p == -1) return 1;
+```
+
 ## Note
 Defaultly, `HEADER.html` will append in the front of the page, and `README.html` will append int the end of the page. You can write `ReadmeName FOOTER.html` in `.htaccess` if you like
 

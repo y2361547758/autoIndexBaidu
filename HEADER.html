@@ -92,7 +92,7 @@
       width: 100%;
     }
   </style>
-  <style id='b' type="disable">
+  <style id='b'>
     tr:first-child {
       display: block;
       width: 100%;
@@ -128,7 +128,8 @@
   <script>
     function get() {
       var p = document.cookie.search(/v=(0|1)/);
-      if (p != -1 && document.cookie[p+2] == "1") return 1;
+      if (p == -1) return 0;
+      if (document.cookie[p+2] == "1") return 1;
       else return 0;
     }
     function display(p) {
