@@ -44,6 +44,12 @@ HeaderName /icons/HEADER.html
 ReadmeName /icons/README.html
 ```
 
+You can add comment on files by writing this in `.htaccess`, And you can create `.htaccess` on any sub dir. But a too long name/comment would overflow and been hidden.
+
+```apache
+AddDescription "<comment>" <path/><somefile>
+```
+
 ## Reference
 See Apache (httpd) doc for `mod_autoindex`: [The Office Doc](http://httpd.apache.org/docs/current/mod/mod_autoindex.html) or [Chinese Translate](https://www.php.cn/manual/view/17749.html)
 
