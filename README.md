@@ -15,6 +15,8 @@ then all dirs under this folder would have
 
 > If you don't want any Cookies or JavaScript or neither of them, just delete the code in `HEADER.html`
 
+see Branch [Cookiesless](https://github.com/y2361547758/autoIndexBaidu/tree/Cookiesless) and [JavaScriptless](https://github.com/y2361547758/autoIndexBaidu/tree/JavaScriptless) (of cause there's no Cookies when no JavaScript.)
+
 ### To set Detailed view as defatule:
 Change `HEADER.html` [Line #131](HEADER.html#L131):
 ```javascript
