@@ -126,19 +126,7 @@
   </style>
 </head>
 <body>
-  <script>
-	var p = 0;
-    function display(p) {
-      document.getElementById('b').disabled = p;
-      document.getElementById('b').type = p ? 'disable' : '';
-    }
-    function toggle() {
-      p = p ? 0 : 1;
-      display(p);
-    }
-    display(p);
-  </script>
   <header>
-    <button title="Switch View" onclick="toggle()"></button>
+    <button title="Switch View"></button>
     <a href="/"><img src="/icons/popup_close.png"></a>
   </header>

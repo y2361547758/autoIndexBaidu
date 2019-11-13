@@ -8,7 +8,7 @@ then all dirs under this folder would have
 
 ## Feature
 * Tap-friendly view.
-* Switch view between Detailed view and Icons view. (require JavaScript)
+* ~~Switch view between Detailed view and Icons view. (require JavaScript)~~
 * ~~Remember every view of a dir, and inherit from parent dir. (require Cookies)~~
 
 > There's my name and link in `README.html` that will show as footer, modify it as you wish
@@ -16,9 +16,9 @@ then all dirs under this folder would have
 > If you don't want any Cookies or JavaScript or neither of them, just delete the code in `HEADER.html`
 
 ### To set Detailed view as defatule:
-Change `HEADER.html` [Line #131](HEADER.html#L131):
+Change `HEADER.html` [Line #95](HEADER.html#L95) or you can just delete the whole style tag `style#b`:
 ```javascript
-if (p == -1) return 1;
+<style id="b" type="disable" disabled="disabled">
 ```
 
 ## Note
