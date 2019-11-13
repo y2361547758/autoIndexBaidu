@@ -9,7 +9,7 @@ then all dirs under this folder would have
 ## Feature
 * Tap-friendly view.
 * Switch view between Detailed view and Icons view. (require JavaScript)
-* Remember every view of a dir, and inherit from parent dir. (require Cookies)
+* ~~Remember every view of a dir, and inherit from parent dir. (require Cookies)~~
 
 > There's my name and link in `README.html` that will show as footer, modify it as you wish
 

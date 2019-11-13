@@ -127,22 +127,16 @@
 </head>
 <body>
   <script>
-    function get() {
-      var p = document.cookie.search(/v=(0|1)/);
-      if (p == -1) return 0;
-      if (document.cookie[p+2] == "1") return 1;
-      else return 0;
-    }
+	var p = 0;
     function display(p) {
       document.getElementById('b').disabled = p;
       document.getElementById('b').type = p ? 'disable' : '';
     }
     function toggle() {
-      var p = get() ? 0 : 1;
-      document.cookie = "v=" + p + "; expires=" + new Date(Date.now() + 30758400000).toUTCString()
+      p = p ? 0 : 1;
       display(p);
     }
-    display(get());
+    display(p);
   </script>
   <header>
     <button title="Switch View" onclick="toggle()"></button>
