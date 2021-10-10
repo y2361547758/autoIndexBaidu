@@ -1,0 +1,131 @@
+
+.icon:before
+{content: url(/_plugin/cloud.png)}
+.exe:before,
+.msi:before,
+.wasm:before,
+.pyc:before,
+.class:before
+{content: url(/_plugin/exe.png)}
+.png:before,
+.svg:before,
+.bmp:before,
+.webp:before,
+.gif:before,
+.jpeg:before,
+.jpg:before
+{content: url(/_plugin/image.png)}
+.mp4:before,
+.webm:before,
+.mpeg:before,
+.mpg:before,
+.avi:before,
+.mov:before,
+.flv:before,
+.swf:before,
+.m3u:before,
+.m3u8:before
+{content: url(/_plugin/video.png)}
+.aac:before,
+.flac:before,
+.ogg:before,
+.opus:before,
+.wav:before,
+.wave:before,
+.mp3:before
+{content: url(/_plugin/audio.png)}
+.folder:before
+{content: url(/_plugin/folder.png)}
+.ai:before
+{content: url(/_plugin/ai.png)}
+.apk:before,
+.apks:before,
+.apkx:before
+{content: url(/_plugin/Android.png)}
+.code:before,
+.sh:before,
+.csh:before,
+.zsh:before,
+.bat:before,
+.py:before,
+.go:before,
+.c:before,
+.cpp:before,
+.h:before,
+.hpp:before,
+.cc:before,
+.CC:before,
+.c\+\+:before,
+.java:before,
+.yaml:before,
+.yml:before,
+.js:before,
+.css:before,
+.json:before,
+.toml:before,
+.rs:before,
+.ts:before
+{content: url(/_plugin/code.png)}
+.html:before,
+.htm:before,
+.xhtml:before,
+.xml:before,
+.pom:before,
+.xslt:before
+{content: url(/_plugin/html.png)}
+.iso:before,
+.img:before,
+.vhd:before,
+.vhdx:before,
+.avhd:before,
+.avhdx:before,
+.vhds:before,
+.vmdk:before,
+.ext:before,
+.fat:before,
+.ntfs:before,
+.qcow2:before,
+.raw:before,
+.vdi:before,
+.qcow:before,
+.qed:before,
+.zvhd:before,
+.zvhd2:before
+{content: url(/_plugin/iso.png)}
+.lnk:before,
+.link:before,
+.url:before,
+.symbol:before
+{content: url(/_plugin/link.png)}
+.ppt:before,
+.pptx:before
+{content: url(/_plugin/ppt.png)}
+.psd:before
+{content: url(/_plugin/psd.png)}
+.xls:before,
+.xlsx:before,
+.csv:before,
+.tsv:before
+{content: url(/_plugin/sheet.png)}
+.text:before,
+.txt:before,
+.md:before
+{content: url(/_plugin/text.png)}
+.zip:before,
+.rar:before,
+.jar:before,
+.\37z:before,
+.gz:before,
+.xz:before,
+.bzip2:before,
+.tar:before,
+.wim:before,
+.cap:before,
+.dep:before,
+.rpm:before,
+.zxt:before
+{content: url(/_plugin/zip.png)}
+.folder_pc:before
+{content: url(/_plugin/folder_pc.png)}
+.iOS:before, .ipa:before
+{content: url(/_plugin/iOS.png)}
